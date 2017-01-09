@@ -1,6 +1,6 @@
 **Note: this file is a modified version of "features_info.txt" from the original dataset
 
-## *mergedData.csv*
+## *mergedData.txt*
 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
@@ -44,8 +44,8 @@ In addition, two variables indicate the tested subject and the performed activit
 * activity: strings indicating the activity performed by the tested subject
 
 
-## *average_data.csv*
-This file contains averaged values of all variables listed for *mergedData.csv*, grouped by *subject* and *activity*.
+## *average_data.txt*
+This file contains averaged values of all variables listed for *mergedData.txt*, grouped by *subject* and *activity*.
 
 
 

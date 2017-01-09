@@ -27,7 +27,7 @@ mergedData <- rbind(trainData[, featureLabels], testData[, featureLabels])
 names(mergedData) <- features
 mergedData$subject <- subject[,1]
 mergedData$activity <- activity_labels[activityLabel[,1],2]
-write.csv(mergedData, "merged_data.csv")
+write.table(mergedData, "merged_data.txt", row.names = FALSE)
 
 # Step 4. grouping dataset by subject & activity, computing average of each group
 averageData <- aggregate(mergedData[, 1:66], 
@@ -35,4 +35,4 @@ averageData <- aggregate(mergedData[, 1:66],
                               "activity" = mergedData$activity), 
                               FUN = mean)
 
-write.csv(averageData, "average_data.csv")
+write.csv(averageData, "average_data.txt", row.names = FALSE)
