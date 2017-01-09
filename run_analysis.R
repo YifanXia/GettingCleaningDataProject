@@ -35,4 +35,4 @@ averageData <- aggregate(mergedData[, 1:66],
                               "activity" = mergedData$activity), 
                               FUN = mean)
 
-write.csv(averageData, "average_data.txt", row.names = FALSE)
+write.table(averageData, "average_data.txt", row.names = FALSE)
